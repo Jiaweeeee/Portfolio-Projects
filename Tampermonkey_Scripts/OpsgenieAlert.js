@@ -3,6 +3,8 @@
 // @namespace    http://tampermonkey.net/
 // @version      1.0
 // @description  Plays a sound when a new alert comes in on Opsgenie and logs ticket IDs in the console
+// @updateURL    https://raw.githubusercontent.com/Jiaweeeee/Portfolio-Projects/main/Tampermonkey_Scripts/OpsgenieAlert.js
+// @downloadURL  https://raw.githubusercontent.com/Jiaweeeee/Portfolio-Projects/main/Tampermonkey_Scripts/OpsgenieAlert.js
 // @author       Sky
 // @match        https://*.app.opsgenie.com/alert/list
 // @grant        none
@@ -31,7 +33,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
     // Function to play an alert sound
     function playAlertSound() {
-        const audio = new Audio('https://cdn.pixabay.com/download/audio/2024/02/19/audio_e4043ea6be.mp3?filename=level-up-191997.mp3'); // Free sound from SoundJay
+        const audio = new Audio('https://cdn.pixabay.com/download/audio/2024/02/19/audio_e4043ea6be.mp3?filename=level-up-191997.mp3'); // Free sound from pixabay
         audio.play().then(() => {
             console.log("Alert sound played");
         }).catch(error => {
